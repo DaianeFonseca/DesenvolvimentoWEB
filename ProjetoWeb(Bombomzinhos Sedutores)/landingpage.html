@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElasTaxi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="static/css/mainfinal.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+    <a class="navbar-brand" href="landingpage.html">ElasTÁXI</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="portifolio.html">| Portifólio</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="dashborad.html">| Dashboard</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Configurações
+            </a>
+            <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="perfil.html">Perfil</a></li>
+            <li><a class="dropdown-item" href="config.html">Mais</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Sair</a></li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true"></a>
+        </li>
+        </ul>
+        <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+        </form>
+    </div>
+    </div>
+</nav>
+<!-- Modelo de viagem -->
+<select class="form-select" aria-label="Default select example">
+<option selected>Modelo de viagem | 🚘</option>
+<option value="1">Confort</option>
+<option value="2">Economica</option>
+<option value="3">Black</option>
+</select>
+
+    <!-- Local de partida / Destino -->
+<div class="mb-3">
+    <label for="formGroupExampleInput" class="form-label">Local de partida ➜ </label>
+    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Insira seu local de partida">
+</div>
+<div class="mb-3">
+    <label for="formGroupExampleInput2" class="form-label">Destino | 📍</label>
+    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Insira seu destino">
+</div>
+
+
+<!-- Chamar um motorista -->
+<button type="button" class="btn botao-centro" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Chamar um motorista
+</button>
+
+<!-- Confirmar destino -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Verifique se as informações a baixo estão corretas.</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        Local de partida ➔ Localização atual
+        </div>
+        <div class="modal-body">
+        Destino ➔​ R. Síria N212 📍
+        </div>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-primary">Confirmar</button>
+        </div>
+    </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+<footer class="bag-secondary margi-landi">
+    &copy;All rights reserved - 2026
+</footer>
+</body>
+</html>
